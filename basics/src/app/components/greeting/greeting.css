@@ -1,0 +1,11 @@
+.greeting {
+  padding: 0.5rem 0;
+}
+
+.greeting-message {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333;
+}

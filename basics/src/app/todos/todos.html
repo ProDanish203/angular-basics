@@ -1,0 +1,29 @@
+<main class="todos">
+  <section class="todos-section">
+    <!-- Add a new todo -->
+    <form class="todos-add" (submit)="addTodo($event)">
+      <input
+        #todo
+        class="todos-input"
+        type="text"
+        placeholder="Add a new todo..."
+        name="todo"
+        required
+      />
+      <button class="todos-add-btn" type="submit">Add Todo</button>
+    </form>
+
+    <!-- Render todos -->
+    @if (todos().length > 0) {
+      <div class="todos-grid">
+        @for (todo of todos(); track todo.id) {
+          <app-todo-item [todo]="todo" (toggleTodo)="toggleTodo(todo)"></app-todo-item>
+        }
+      </div>
+    } @else {
+      <div class="todos-empty">
+        <p>No todos found, add a new todo to get started</p>
+      </div>
+    }
+  </section>
+</main>

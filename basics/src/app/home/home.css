@@ -1,0 +1,25 @@
+.home {
+  padding: 1.5rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.home-input:focus {
+  outline: none;
+  border-color: #333;
+}

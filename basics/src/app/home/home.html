@@ -1,0 +1,12 @@
+<main class="home">
+  <section class="home-section">
+    <app-greeting [message]="message()" />
+    <app-counter />
+    <input
+      class="home-input"
+      type="text"
+      placeholder="enter input here...."
+      (keyup)="keyUpHandler($event)"
+    />
+  </section>
+</main>

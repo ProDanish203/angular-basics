@@ -1,0 +1,11 @@
+<div class="todo-item" [class.todo-item--completed]="todo()?.completed">
+  <label class="todo-item__row">
+    <input
+      type="checkbox"
+      class="todo-item__checkbox"
+      [checked]="todo()?.completed"
+      (change)="toggleTodo.emit(todo()!)"
+    />
+    <span class="todo-item__title">{{ todo()?.title }}</span>
+  </label>
+</div>

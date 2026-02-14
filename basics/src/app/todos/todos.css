@@ -1,0 +1,60 @@
+.todos {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.todos-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.todos-add {
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.todos-add-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.todos-add-btn:hover {
+  background-color: #444;
+}
+
+.todos-input {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.todos-input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.todos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.todos-empty {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #666;
+}

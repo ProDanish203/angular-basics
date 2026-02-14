@@ -1,0 +1,42 @@
+.counter {
+  padding: 1rem;
+  max-width: 20rem;
+}
+
+.counter-value {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.counter button {
+  background-color: var(--gray-900, #333);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.counter button:hover:not(:disabled) {
+  background-color: var(--gray-800, #444);
+}
+
+.counter button:disabled {
+  background-color: var(--gray-400, #999);
+  cursor: not-allowed;
+}
+
+.counter input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gray-400, #ccc);
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
